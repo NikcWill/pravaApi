@@ -5,7 +5,7 @@ let proximoButton = document.querySelector('#proximo');
 let paginaAtual = 1;
 
 async function getApi(filme, page) {
-    let request = await fetch(`http://www.omdbapi.com/?s=${filme}&apikey=e6c43dc6&page=${page}`);
+    let request = await fetch(`https://www.omdbapi.com/?s=${filme}&apikey=e6c43dc6&page=${page}`);
     let data = await request.json();
 
     console.log(data['Search']);
